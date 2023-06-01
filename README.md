@@ -1,18 +1,9 @@
-# create-svelte
+# Happy Birthday Leon (ɔ◔‿◔)ɔ ♥
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+[![Built With Love](https://img.shields.io/badge/built%20with-<3-790d14.svg?style=flat&logo=)]()
+[![Powered By Sveltekit](https://img.shields.io/badge/powered%20by-sveltekit-FF3C02.svg?style=flat&logo=svelte)](https://kit.svelte.dev/)
+[![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![Hosted On Firebase](https://img.shields.io/badge/hosted%20on-firebase-ffcb2c.svg?style=flat&logo=firebase)](https://firebase.google.com/)
 
 ## Developing
 
@@ -34,5 +25,3 @@ npm run build
 ```
 
 You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
