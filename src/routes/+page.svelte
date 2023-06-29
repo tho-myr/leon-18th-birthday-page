@@ -21,17 +21,23 @@
 
 <main>
     <div class="flex-container" id="face-container">
-        <img id="chat-bubble" src="chat-bubble.svg" alt="Punch Leon to win a suprise gift!" />
+        <img
+            id="chat-bubble"
+            src="chat-bubble.svg"
+            alt="Punch Leon to win a suprise gift!"
+        />
         <img id="face" src="face.png" alt="Wunderschoenes Gesicht von Leon" />
-        <div id="headline" class="text-container">Happy Birthday Leon</div>
-        <div id="emoji" class="text-container">(ɔ◔‿◔)ɔ ♥</div>
+        <div class="text-container headline">Happy Birthday Leon</div>
+        <div class="text-container emoji">(ɔ◔‿◔)ɔ ♥</div>
     </div>
     <div class="flex-container" id="video-container">
         <video id="rickroll" height="50%" src="rickroll.mp4">
             <track kind="captions" />
         </video>
-        <div id="headline" class="text-container">jk u just got rickrolled</div>
-        <div id="emoji" class="text-container">┏(-_-)┛┗(-_- )┓</div>
+        <div class="text-container headline">jk u just got rickrolled</div>
+        <div id="dancing-emoji" class="text-container emoji">
+            ┏(-_-)┛┗(-_- )┓
+        </div>
     </div>
 </main>
 
@@ -64,13 +70,13 @@
         font-weight: 800;
         color: white;
     }
-    #headline {
+    .headline {
         animation: flyInLeft 3s;
         -webkit-animation: flyInLeft 3s;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 0.5px;
     }
-    #emoji {
+    .emoji {
         animation: flyInRight 3s;
         -webkit-animation: flyInRight 3s;
     }
