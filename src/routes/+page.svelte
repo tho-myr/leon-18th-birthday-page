@@ -21,6 +21,7 @@
 
 <main>
     <div class="flex-container" id="face-container">
+        <img id="chat-bubble" src="chat-bubble.svg" alt="Punch Leon to win a suprise gift!" />
         <img id="face" src="face.png" alt="Wunderschoenes Gesicht von Leon" />
         <div id="headline" class="text-container">Happy Birthday Leon</div>
         <div id="emoji" class="text-container">(ɔ◔‿◔)ɔ ♥</div>
@@ -29,8 +30,8 @@
         <video id="rickroll" width="80%" src="rickroll.mp4">
             <track kind="captions" />
         </video>
-        <div id="headline" class="text-container">Happy Birthday Leon</div>
-        <div id="emoji" class="text-container">(ɔ◔‿◔)ɔ ♥</div>
+        <div id="headline" class="text-container">jk u just got rickrolled</div>
+        <div id="emoji" class="text-container">┏(-_-)┛┗(-_- )┓</div>
     </div>
 </main>
 
@@ -46,6 +47,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    #chat-bubble {
+        opacity: 0%;
+        animation: blink 1s linear infinite;
+        animation-delay: 1s;
     }
     #face {
         height: 50%;
@@ -127,6 +133,12 @@
         }
         100% {
             transform: translateX(0%);
+        }
+    }
+
+    @keyframes blink {
+        50% {
+            opacity: 100%;
         }
     }
 </style>
