@@ -27,7 +27,7 @@
         <div id="emoji" class="text-container">(ɔ◔‿◔)ɔ ♥</div>
     </div>
     <div class="flex-container" id="video-container">
-        <video id="rickroll" width="80%" src="rickroll.mp4">
+        <video id="rickroll" height="50%" src="rickroll.mp4">
             <track kind="captions" />
         </video>
         <div id="headline" class="text-container">jk u just got rickrolled</div>
