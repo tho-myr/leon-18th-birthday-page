@@ -1,17 +1,42 @@
 <script>
+    import { onMount } from "svelte";
+
+    onMount(() => {
+        const faceContainer = document.getElementById("face-container");
+        const videoContainer = document.getElementById("video-container");
+        const face = document.getElementById("face");
+        const rickroll = document.getElementById("rickroll");
+
+        if (face != null && faceContainer != null && videoContainer != null && rickroll != null) {
+            face.onclick = (event) => {
+                // window.location.href =
+                //     "https://shattereddisk.github.io/rickroll/rickroll.mp4";
+                faceContainer.remove();
+                videoContainer.style.visibility = 'visible';
+                rickroll.play();
+            };
+        }
+    });
 </script>
 
 <main>
-    <div class="flex-container">
-        <img id="face" src="face.png" alt="Wunderschoenes Gesicht von Leon">
+    <div class="flex-container" id="face-container">
+        <img id="face" src="face.png" alt="Wunderschoenes Gesicht von Leon" />
+        <div id="headline" class="text-container">Happy Birthday Leon</div>
+        <div id="emoji" class="text-container">(ɔ◔‿◔)ɔ ♥</div>
+    </div>
+    <div class="flex-container" id="video-container">
+        <video id="rickroll" width="80%" src="rickroll.mp4">
+            <track kind="captions" />
+        </video>
         <div id="headline" class="text-container">Happy Birthday Leon</div>
         <div id="emoji" class="text-container">(ɔ◔‿◔)ɔ ♥</div>
     </div>
 </main>
 
-
 <style>
-    main, .flex-container {
+    main,
+    .flex-container {
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -24,6 +49,7 @@
     }
     #face {
         height: 50%;
+        cursor: pointer;
         animation: spin 4s infinite linear;
         -webkit-animation: spin 4s infinite linear;
     }
@@ -42,14 +68,30 @@
         animation: flyInRight 3s;
         -webkit-animation: flyInRight 3s;
     }
+    #video-container {
+        visibility: hidden;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     @-moz-keyframes spin {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
+        from {
+            -moz-transform: rotate(0deg);
+        }
+        to {
+            -moz-transform: rotate(360deg);
+        }
     }
     @-webkit-keyframes spin {
-        from { -webkit-transform: rotate(0deg); }
-        to { -webkit-transform: rotate(360deg); }
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
     }
     @keyframes spin {
         0% {
