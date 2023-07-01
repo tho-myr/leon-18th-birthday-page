@@ -19,7 +19,7 @@
         }
 
         // Dancing emoji
-        let titles = ['┏(-_- )┛┗( -_-)┓', '┗( -_-)┓┏(-_- )┛'];
+        let titles = ['┏(◔‿◔ )┛┗( ◔‿◔)┓', '┗( ◔‿◔)┓┏(◔‿◔ )┛'];
         let currentIndex = 0;
         let dancingEmoji = document.getElementById('dancing-emoji');
 
