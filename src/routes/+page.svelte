@@ -17,6 +17,23 @@
                 rickroll.play();
             };
         }
+
+        // Dancing emoji
+        let titles = ['┏(-_- )┛┗( -_-)┓', '┗( -_-)┓┏(-_- )┛'];
+        let currentIndex = 0;
+        let dancingEmoji = document.getElementById('dancing-emoji');
+
+        if(dancingEmoji != null) {
+            setInterval(() => {
+                dancingEmoji.innerHTML= titles[currentIndex];   
+                
+                currentIndex++;
+                
+                if (currentIndex === 2)
+                    currentIndex = 0;
+    
+            }, 200);
+        }
     });
 </script>
 
@@ -36,9 +53,7 @@
             <track kind="captions" />
         </video>
         <div class="text-container headline">jk u just got rickrolled</div>
-        <div id="dancing-emoji" class="text-container emoji">
-            ┏(-_-)┛┗(-_- )┓
-        </div>
+        <div id="dancing-emoji" class="text-container emoji"/>
     </div>
     <GithubFloatingActionButton href="https://github.com/tho-myr/leon-18th-birthday-page" />
 </main>
