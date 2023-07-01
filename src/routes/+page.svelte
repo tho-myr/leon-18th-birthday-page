@@ -1,4 +1,5 @@
 <script>
+	import GithubFloatingActionButton from '$lib/GithubFloatingActionButton.svelte';
     import { onMount } from "svelte";
 
     onMount(() => {
@@ -39,16 +40,22 @@
             ┏(-_-)┛┗(-_- )┓
         </div>
     </div>
+    <GithubFloatingActionButton href="https://github.com/tho-myr/leon-18th-birthday-page" />
 </main>
 
 <style>
-    main,
-    .flex-container {
+    main {
         width: 100%;
         height: 100%;
         overflow: hidden;
     }
     .flex-container {
+        height: calc(100% - 30px);
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -66,7 +73,7 @@
         -webkit-animation: spin 4s infinite linear;
     }
     .text-container {
-        font-size: min(5.5vw, 70px);
+        font-size: min(max(5.5vw, 20px), 70px);
         font-weight: 800;
         color: white;
     }
